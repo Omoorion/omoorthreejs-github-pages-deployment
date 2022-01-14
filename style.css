@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 125vh;
+  font-family: "Poppins";
+  background-color: rgb(24, 24, 24);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.webgl {
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  outline: none;
+  mix-blend-mode: screen;
+}
+
+.container {
+  height: 50vh;
+  display: list-item;
+  place-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+}
+
+.desc {
+  padding-top: 20%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 194, 194);
+}
