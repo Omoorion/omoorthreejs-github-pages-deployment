@@ -42,7 +42,7 @@ const textureLoader = new THREE.TextureLoader();
 
       //Light 1
       const pointLight1 = new THREE.PointLight(0x16163e, 2);
-      pointLight1.position.set(-1.71, 1.59, -0.66);
+      pointLight1.position.set(-0.65, -0.33, -3);
       pointLight1.intensity = 10;
 
       scene.add(pointLight1);
@@ -66,7 +66,7 @@ const textureLoader = new THREE.TextureLoader();
 
       //Light 2
       const pointLight2 = new THREE.PointLight(0xc50700, 2);
-      pointLight2.position.set(2.79, -1.52, -1.6);
+      pointLight2.position.set(0.41, -1.5, -1.6);
       pointLight2.intensity = 10;
 
       scene.add(pointLight2);
