@@ -215,16 +215,16 @@ const textureLoader = new THREE.TextureLoader()
 
       function moveSphere(){
         //make the bounds also relative to the z of the sphere (sort of it's size in user's POV)
-        if((keys["w"] || keys["ArrowUp"]) && sphere.position.y < ObjectHolder.clientHeight/ObjectHolder.scrollHeight / camera.position.z){
+        if((keys["w"] || keys["ArrowUp"]) && sphere.position.y < ObjectHolder.clientHeight/ObjectHolder.scrollHeight / camera.position.z * 2){
           sphere.position.y += 0.1;
         }
-        if((keys["s"] || keys["ArrowDown"]) && sphere.position.y > -ObjectHolder.clientHeight/ObjectHolder.scrollHeight / camera.position.z){
+        if((keys["s"] || keys["ArrowDown"]) && sphere.position.y > -ObjectHolder.clientHeight/ObjectHolder.scrollHeight / camera.position.z * 2){
           sphere.position.y -= 0.1;
         }
-        if((keys["d"] || keys["ArrowRight"]) && sphere.position.x < ObjectHolder.clientWidth/ObjectHolder.scrollHeight / camera.position.z){
+        if((keys["d"] || keys["ArrowRight"]) && sphere.position.x < ObjectHolder.clientWidth/ObjectHolder.scrollHeight / camera.position.z * 2){
           sphere.position.x += 0.1;
         }
-        if((keys["a"] || keys["ArrowLeft"]) && sphere.position.x > -ObjectHolder.clientWidth/ObjectHolder.scrollHeight / camera.position.z){
+        if((keys["a"] || keys["ArrowLeft"]) && sphere.position.x > -ObjectHolder.clientWidth/ObjectHolder.scrollHeight / camera.position.z * 2){
           sphere.position.x -= 0.1;
         }
       }
