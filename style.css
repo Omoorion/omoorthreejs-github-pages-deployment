@@ -10,7 +10,6 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
-  --darktheme: #0f0f10;
   --transition-speed: 600ms;
 }
 
@@ -71,7 +70,7 @@ h1 {
   background: #ff0066;
 }
 
-.dark {
+.black {
   background: #0f0f10;
 }
 
