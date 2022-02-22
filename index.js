@@ -6,7 +6,7 @@ import * as TWEENMAX from 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/Twe
 
 const textureLoader = new THREE.TextureLoader()
 
-      const normalTexture = textureLoader.load("./FortNMap.png")
+      const normalTexture = textureLoader.load("./OmoorMap.png")
 
       // Debug
       const gui = new GUI()
