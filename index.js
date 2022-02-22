@@ -212,6 +212,22 @@ const textureLoader = new THREE.TextureLoader()
       window.addEventListener('mouseup', function(e){
         click=false
       })
+      // let ControlRotation = true 
+      // const text = document.getElementById("Rot").innerText //make this with keyboard input instead...
+      // document.getElementById("Rot").innerText += ": " + ControlRotation
+      // document.getElementById("Rot").addEventListener("click", function(){
+      //   if(ControlRotation){
+      //     ControlRotation=false
+      //   }
+      //   else{
+      //     ControlRotation=true
+      //   }
+      //   document.getElementById("Rot").innerText = text
+      //   document.getElementById("Rot").innerText += ": " + ControlRotation
+      // })
+      // document.getElementById("Pos").addEventListener("click", function(){
+      //   sphere.position.set(0, 0, 0)
+      // })
 
       function moveSphere(){
         //make the bounds also relative to the z of the sphere (sort of it's size in user's POV)
@@ -231,25 +247,25 @@ const textureLoader = new THREE.TextureLoader()
       const clock = new THREE.Clock()
       let hover=false
       const tick = () => {
-        ObjectHolder.onmouseover = function() { hover=true }
-        ObjectHolder.onmouseout  = function() { hover=false }
         targetX = mouseX * 0.005
         targetY = mouseY * 0.005
 
         const elapsedTime = clock.getElapsedTime()
 
         // Update objects
-      if(click){ //think about how I want this to work...
-        if(hover) {
+      // if(click){ //think about how I want this to work...
+      //   if(hover) {
           sphere.rotation.y = -3.25
-          sphere.rotation.y += 0.5 * (targetX - sphere.rotation.y)
-          sphere.rotation.x += 0.5 * (targetY - sphere.rotation.x)
+          //if(ControlRotation){
+            sphere.rotation.y += 0.5 * (targetX - sphere.rotation.y)
+            sphere.rotation.x += 0.5 * (targetY - sphere.rotation.x)
+          //}
           //sphere.position.z += -0.5 * (targetY - sphere.rotation.x)
-        }
-        else if(!hover){
-          sphere.rotation.y = -0.5 * elapsedTime //if you want it to rotate
-        }
-      }
+        //}
+        // else if(!hover){
+        //   sphere.rotation.y = -0.5 * elapsedTime //if you want it to rotate
+        // }
+      //}
         // Update Orbital Controls
         // controls.update()
         moveSphere()

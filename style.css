@@ -50,6 +50,24 @@ h1 {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+  background: #11c3ff linear-gradient(to bottom, transparent, #009bcf);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+}
+
 .MainTitle {
   font-size: 8em;
 }
@@ -81,12 +99,13 @@ h1 {
   align-items: center;
   outline: none;
   mix-blend-mode: normal;
+  z-index: -1;
 }
 
 .container {
   display: inline-block;
   place-items: center;
-  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .ObjHolder {
@@ -97,6 +116,7 @@ h1 {
   background-color: #dd3f31;
   height: 400px;
   width: 400px;
+  z-index: 0;
 }
 
 .spacer {
